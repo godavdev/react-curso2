@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import Button from './components/Button/Button'
+import InputH1 from './components/InputH1/InputH1'
+import CatFact from './components/CatFact/CatFact'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,14 +11,7 @@ function App() {
 
   return (
     <>
-      <h1>
-        {count}
-      </h1>
-      <p onClick={aumentar}>Aumentar</p>
-      <p onClick={disminuir}>Disminuir</p>
-      <Button nombre={"David"} edad={16} />
-      <Button nombre={"Juan"} edad={32} />
-      <Button nombre={"Carlos"} edad={56}/>
+      <CatFact />
     </>
   )
 }
